@@ -6,6 +6,7 @@ import java.util.Scanner;
 public enum UnidadeFederal {
     Rj("Rio de Janeiro"),
     SP("São Paulo"),
+    ES("Espirito Santo"),
     MG("Minas Gerais"),
     MS("Mato Grosso do Sul"),
     PA("Pará"),
@@ -20,7 +21,13 @@ public enum UnidadeFederal {
     SC("Santa Catarina"),
     SE("Sergipe"),
     TO("Tocantins"),
-    GO("Goias");
+    GO("Goias"),
+    AM("Amazonas"),
+    AC("Acre"),
+    BA("Bahia"),
+    CE("Ceará"),
+    AP("Amapa"),
+    AL("Alagoas");
 
     private final String unidadeFederal;
 
@@ -57,7 +64,22 @@ public enum UnidadeFederal {
                 break;
             case "sudeste":
                 System.out.println(UnidadeFederal.Rj.getUf() + "\n" + UnidadeFederal.SP.getUf() + "\n"
-                        + UnidadeFederal.MG.getUf());
+                        + UnidadeFederal.MG.getUf() + "\n" + UnidadeFederal.ES.getUf());
+                break;
+            case "nordeste":
+                System.out.println(UnidadeFederal.PI.getUf() + "\n" + UnidadeFederal.SE.getUf() + "\n" +
+                        UnidadeFederal.BA.getUf() + "\n" + UnidadeFederal.CE.getUf() + "\n" + UnidadeFederal.RN.getUf()
+                        + "\n" +
+                        UnidadeFederal.SE.getUf() + "\n" + UnidadeFederal.PB.getUf() + "\n" + UnidadeFederal.PE.getUf()
+                        + "\n" +
+                        UnidadeFederal.AL.getUf());
+                break;
+            case "norte":
+                System.out.println(UnidadeFederal.AC.getUf() + "\n" + UnidadeFederal.AM.getUf() + "\n"
+                        + UnidadeFederal.RO.getUf() + "\n" +
+                        UnidadeFederal.TO.getUf() + "\n" + UnidadeFederal.PA.getUf() + "\n" + UnidadeFederal.RR.getUf()
+                        + "\n" + UnidadeFederal.AP.getUf());
+                break;
 
             default:
                 break;
